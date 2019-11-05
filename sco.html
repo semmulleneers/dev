@@ -1,0 +1,45 @@
+<!doctype html>
+<html style="background-color: black;">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="sco.css">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>	
+
+<title>Mull-it</title>
+<link rel="icon" type="image/ico" href="image/logosem.png" />
+	
+	<script>
+	$(document).ready(function(){
+	$( "a.scrollLink" ).click(function( event ) {
+		event.preventDefault();
+		$("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+		});
+		});
+	</script>
+	
+</head>
+
+<body>
+	
+<!------------header------------------------------------------------->		
+	<header>
+		<div id="logo">
+			<a href="index.html">
+				<img href="index.html" src="image/logo sem.png" alt="Mull-IT"/>
+			</a>
+		</div>
+		
+		<nav id="main-nav">
+			<ul>
+				<li><a href="#home" class="scrollLink">Home</a></li>
+				<li><a href="#aboutme" class="scrollLink">About Me</a></li>
+				<li><a href="#work" class="scrollLink">Work</a></li>
+				<li><a href="#contact" class="scrollLink">Contact</a></li>
+			</ul>
+		</nav>
+		
+	</header>
+	
+
+</body>
+</html>

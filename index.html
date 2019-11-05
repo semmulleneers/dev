@@ -3,8 +3,20 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>	
 
-<title>Mull</title>
+<title>Mull-it</title>
+<link rel="icon" type="image/ico" href="https://i.postimg.cc/fTVvH7qN/logosem.png" />
+	
+	<script>
+	$(document).ready(function(){
+	$( "a.scrollLink" ).click(function( event ) {
+		event.preventDefault();
+		$("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+		});
+		});
+	</script>
+	
 </head>
 
 <body>
@@ -12,17 +24,17 @@
 <!------------header------------------------------------------------->	
 	<header>
 		<div id="logo">
-			<a href="#">
-				<img src="image/" alt="logo"/>
+			<a href="index.html">
+				<img src="image/logosem.png" alt="Mull-IT"/>
 			</a>
 		</div>
 		
 		<nav id="main-nav">
 			<ul>
-				<li><a href="#home">Home</a></li>
-				<li><a href="#aboutme">About Me</a></li>
-				<li><a href="#work">Work</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a href="#home" class="scrollLink">Home</a></li>
+				<li><a href="#aboutme" class="scrollLink">About Me</a></li>
+				<li><a href="#work" class="scrollLink">Work</a></li>
+				<li><a href="#contact" class="scrollLink">Contact</a></li>
 			</ul>
 		</nav>
 		
@@ -32,9 +44,14 @@
 	<section id="home">
 		<h1>Sem Mulleneers</h1>
 		<h2>Student Media Design</h2>
-		<a Href="#aboutme">
-			<img src="image/pijl.png" alt="pijl">
+		<a Href="#aboutme" class="scrollLink">
+			<img src="image/pijl.png"  alt="pijl">
 		</a>
+		<div id="info">
+			<div class="tooltip"><img src="image/info.png" alt="info" />
+  				<span class="tooltiptext">deze foto is genomen op essential festival. omdat ik een zelf aan het werk was op dit festival heb ik een fotograaf gevraagd of hij wat foto’s voor me kan maken voor mijn portfolio website.</span>
+			</div>
+		</div>
 	</section>
 	
 <!------------About Me------------------------------------------------>	
@@ -43,7 +60,7 @@
 		<hr>
 		<img src="image/me.png" alt="Me"/>
 		<h4> Sem Mulleneers</h4>
-		<p>	Mijn naam is Sem Mulleneers, ben 21 jaar oud. Ik studeert momenteel Media design en dit is mij portfolio. mijn hobby is muziek maken. ik werk bij de mediamarkt en doe vrijwilligers werk bij een pyro bedrijf. </p>
+		<p>	Mijn naam is Sem Mulleneers en ik ben 21 jaar oud. Ik studeer momenteel ICT en Media Design en dit is mij portfolio. mijn hobby is muziek maken. ik werk bij de mediamarkt en doe vrijwilligers werk bij een pyro bedrijf. </p>
 	</section>
 	
 <!------------Work--------------------------------------------------->	
@@ -52,12 +69,11 @@
 		<hr>
 		<div id="projects">
 			<ul>
-				<li><a href=""><img src="image/.png" alt="project 1"></a></li>
-				<li><a href=""><img src="image/.png" alt="project 2"></a></li>
-				<li><a href="#work"><img src="image/.png" alt="project 3"></a></li>
-				<li><a href=""><img src="image/.png" alt="project 4"></a></li>
-				<li><a href=""><img src="image/.png" alt="project 5"></a></li>
-				<li><a href=""><img src="image/.png" alt="project 6"></a></li>
+				<li><a href="sco.html"><img src="image/sco.png" alt="sco"></a></li>
+				<li><a href="dev.html"><img src="image/dev.png" alt="dev"></a></li>
+				<li><a href=""><img src="image/UEX.png" alt="uex"></a></li>
+				<li><a href=""><img src="image/po2.png" alt="po"></a></li>
+				<li><a href=""><img src="image/Aisha.png" alt="Aisha"></a></li>
 			</ul>
 		</div>
 	</section>
